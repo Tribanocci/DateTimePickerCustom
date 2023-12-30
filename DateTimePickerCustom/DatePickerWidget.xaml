@@ -1,0 +1,124 @@
+﻿<UserControl x:Class="DateTimePickerCustom.DatePickerWidget"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:sys="clr-namespace:System;assembly=mscorlib"
+             xmlns:local="clr-namespace:DateTimePickerCustom"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+
+    <UserControl.Resources>
+        <Style x:Key="CalanderButtons" TargetType="Button">
+            <Setter Property="Background" Value="Transparent" />
+            <Setter Property="HorizontalAlignment" Value="Center" />
+            <Setter Property="VerticalAlignment" Value="Center" />
+            <Setter Property="Foreground" Value="Black" />
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalAlignment" Value="Stretch"/>
+            <Setter Property="VerticalAlignment" Value="Stretch"/>
+        </Style>
+
+        <Style BasedOn="{StaticResource CalanderButtons}" TargetType="Button" x:Key="CalanderButtons_prev">
+            <Setter Property="Foreground" Value="Gray" />
+        </Style>
+
+        <Style BasedOn="{StaticResource CalanderButtons}" TargetType="Button" x:Key="CalanderButtons_active">
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="Background" Value="#FF0032FB" />
+        </Style>
+
+    </UserControl.Resources>
+
+
+
+    <Grid x:Name="MainGrid">
+        <Grid.RowDefinitions>
+            <!-- First row with a single TextBlock centered -->
+            <RowDefinition Height="2*"/>
+            <!-- Second row with three columns -->
+            <RowDefinition Height="*"/>
+            <!-- Rows 3 to 9 with 7 columns each -->
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+
+            <!-- Tenth row with two columns centered -->
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+
+        <!-- First row with a single TextBlock centered -->
+        <Grid Grid.Row="0">
+            <Viewbox HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center" Height="40">
+                <TextBlock Margin="10 0 10 0" Text="{Binding ActiveDate, StringFormat='dddd, MMMM dd, yyyy'}"/>
+            </Viewbox>
+        </Grid>
+
+
+
+        <!-- Second row with three columns -->
+        <Grid Grid.Row="1" HorizontalAlignment="Stretch">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Previous button with transparent background -->
+            <Button Grid.Column="0" x:Name="PreviousButton" Content="⮜" Background="Transparent" Width="30" Height="25" Margin="5" />
+
+            <!-- TextBlock displaying the current month and year -->
+            <TextBlock Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="MonthYearText" Text="{Binding SelectedMonthAndYear,  StringFormat='MMMM yyyy'}"/>
+
+            <!-- Next button with transparent background -->
+            <Button Grid.Column="2" x:Name="NextButton" Content="⮞" Background="Transparent" Width="30" Height="25" Margin="5"/>
+        </Grid>
+
+        <!-- Rows 3 to 9 with 7 columns each -->
+        <!-- Repeat the following block for rows 3 to 9 -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Text="SU"/>
+            <TextBlock Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Text="MO"/>
+            <TextBlock Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Text="TU"/>
+            <TextBlock Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Center" Text="WE"/>
+            <TextBlock Grid.Column="4" HorizontalAlignment="Center" VerticalAlignment="Center" Text="TH"/>
+            <TextBlock Grid.Column="5" HorizontalAlignment="Center" VerticalAlignment="Center" Text="FR"/>
+            <TextBlock Grid.Column="6" HorizontalAlignment="Center" VerticalAlignment="Center" Text="SA"/>
+        </Grid>
+
+
+
+        <Grid Grid.Row="3" x:Name="CalanderData"  HorizontalAlignment="Stretch"  Width="auto">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+
+
+
+        <!-- Tenth row with two columns centered -->
+        <Grid Grid.Row="9">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Col 1"/>
+            <TextBlock Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Col 2"/>
+        </Grid>
+    </Grid>
+
+</UserControl>
