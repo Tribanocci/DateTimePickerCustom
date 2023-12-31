@@ -8,9 +8,9 @@ using System.Windows;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("DateTimePickerCustom")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("This projects contains a LibraryClass for a C# WPF application project. The library implements a DateTiemPicker, which besides the date picking has along side a time picking widgets.  Extented documenetations and comments for easy modifications and styling. Appropriate for a dropdown or popup widget for returning a DateTiem value to a textbox, or for a stand-alone calander widget.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("Konstantinos Fytilis")]
 [assembly: AssemblyProduct("DateTimePickerCustom")]
 [assembly: AssemblyCopyright("Copyright ©  2023")]
 [assembly: AssemblyTrademark("")]

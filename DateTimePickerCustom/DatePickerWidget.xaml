@@ -43,7 +43,7 @@
             <RowDefinition Height="4*"/>
 
             <!-- Tenth row with two columns centered -->
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="1.5*"/>
         </Grid.RowDefinitions>
 
         <!-- First row with a single TextBlock centered -->
@@ -116,8 +116,8 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Col 1"/>
-            <TextBlock Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Col 2"/>
+            <TextBlock Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center" Text="OK"/>
+            <TextBlock Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Text="Cancel"/>
         </Grid>
     </Grid>
 

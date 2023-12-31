@@ -5,7 +5,7 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DateTimePickerCustom", "DateTimePickerCustom\DateTimePickerCustom.csproj", "{8FD059AE-B6E1-4FCA-B6D9-CABAC113988B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestCalender", "TestCalender\TestCalender.csproj", "{AF9282E4-8381-4E82-B628-6CCA68C20086}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestCalender", "TestCalender\TestCalender.csproj", "{AF9282E4-8381-4E82-B628-6CCA68C20086}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

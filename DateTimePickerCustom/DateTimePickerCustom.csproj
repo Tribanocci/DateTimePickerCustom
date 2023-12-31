@@ -31,6 +31,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -48,6 +54,9 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="TimePickerWidget.xaml.cs">
+      <DependentUpon>TimePickerWidget.xaml</DependentUpon>
+    </Compile>
     <Page Include="DatePickerWidget.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -55,6 +64,10 @@
     <Compile Include="DatePickerWidget.xaml.cs">
       <DependentUpon>DatePickerWidget.xaml</DependentUpon>
     </Compile>
+    <Page Include="TimePickerWidget.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -78,6 +91,16 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="images\icon.png" />
+    <Resource Include="images\icon.ico" />
+    <Resource Include="docs\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="docs\DatePicker.png" />
+    <Resource Include="docs\SolutionTree.png" />
+    <Resource Include="docs\Test.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

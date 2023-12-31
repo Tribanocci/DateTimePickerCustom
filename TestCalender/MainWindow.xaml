@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:TestCalender"
         xmlns:library="clr-namespace:DateTimePickerCustom;assembly=DateTimePickerCustom"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="600">
     <Grid>
         <library:DatePickerWidget/>
     </Grid>

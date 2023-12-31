@@ -22,7 +22,7 @@ Extented documenetations and comments for easy modifications and styling. Approp
 3. A time picker will be added soon.
 4. The project solution has a WPF application connected to the library for testing the LibraryClass.
 
-![Overview](docs\DatePicker.png)
+![Overview](DatePicker.png)
 
 **The DatePicker widget (the TimePicker will be added to the next update).**
 
@@ -42,16 +42,16 @@ Extented documenetations and comments for easy modifications and styling. Approp
 1. Clone Github repository and add the LibraryClass to your solution.
 2. This is how the solution tree in the solution explorer should look like, if you add a test WPF application.
 
-![solut tree](docs\SolutionTree.png)
+![solut tree](SolutionTree.png)
 
 3. Importing the LbraryClass to the WPF aaplication using the lines with the gray arrow.
 
-![Test](docs\Test.png)
+![Test](Test.png)
 
 
 ## Usage
 
-Besides a stand-alone calander, its a great and stylized solution for a Date and Time Picker as a **Popup** for a TextBlock Date and time selection.
+Besides a stand-alone calander, its a great and stylized solution for a Date and Time Picker as a Popup for a TextBlock.
 
 
 ## Contributing

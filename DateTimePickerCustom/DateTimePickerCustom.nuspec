@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>DateTimePickerCustom.WPF.LibraryClass</id>
+    <version>$version$</version>
+    <title>DateTimePickerCustom</title>
+    <authors>Konstantinos Fytilis</authors>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <!-- <icon>icon.png</icon> -->
+    <projectUrl>https://github.com/Tribanocci/DateTimePickerCustom</projectUrl>
+    <description>A LibraryClass for a C# WPF application project. The library implements a DateTiemPicker, which besides the date picking has along side a time picking widgets. Extented documenetations and comments for easy modifications and styling. Appropriate for a dropdown or popup widget for returning a DateTiem value to a textbox, or for a stand-alone calander widget.</description>
+    <releaseNotes>Initialization of the LibraryClass project with the Date calander. The time picker will be incorporated in the next version.</releaseNotes>
+    <copyright>Copyright 2023</copyright>
+    <tags>Date Time Picker Widget LibraryClass WPF</tags>
+    <icon>icon.png</icon>
+    <readme>docs\README.md</readme>
+  </metadata>
+    <files>
+    <file src="images\icon.png"  target=""/>
+    <file src="..\README.md" target="docs\" />
+  </files>
+</package>
+
