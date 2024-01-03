@@ -1,3 +1,5 @@
+![Nuget](https://img.shields.io/nuget/dt/DateTimePickerCustomNet6)
+
 # DateTimePickerCustom
 
 This projects contains a LibraryClass for a C# WPF application project. The library implements a DateTiemPicker, which besides the date picking has along side a time picking widgets.  
