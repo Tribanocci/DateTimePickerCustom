@@ -24,7 +24,8 @@ Extented documenetations and comments for easy modifications and styling. Approp
 
 ![Overview](docs\DatePicker.png)
 
-**The DatePicker widget (the TimePicker will be added to the next update).**
+**In this Update the TimePicker is available**
+**In next update the Ok button will send DateTime info to a textblock**
 
 
 ## Installation
@@ -44,7 +45,8 @@ Extented documenetations and comments for easy modifications and styling. Approp
 
 ![solut tree](docs\SolutionTree.png)
 
-3. Importing the LbraryClass to the WPF aaplication using the lines with the gray arrow.
+3. Right-Click on the WPF application Project in the solution explorer and Add -> Project Reference 
+4. Importing the LbraryClass to the WPF aaplication using the lines with the gray arrow.
 
 ![Test](docs\Test.png)
 

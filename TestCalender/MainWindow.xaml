@@ -8,6 +8,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="600">
     <Grid>
-        <library:DatePickerWidget/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <library:DatePickerWidget Grid.Column="0"/>
+        <library:TimePickerWidget Grid.Column="1"/>
     </Grid>
 </Window>
