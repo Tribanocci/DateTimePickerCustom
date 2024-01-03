@@ -1,3 +1,4 @@
+![Nuget](https://img.shields.io/nuget/v/DateTimePickerCustomNet6)
 ![Nuget](https://img.shields.io/nuget/dt/DateTimePickerCustomNet6)
 
 # DateTimePickerCustom
