@@ -1,5 +1,5 @@
-![Nuget](https://img.shields.io/nuget/v/DateTimePickerCustomNet6)
-![Nuget](https://img.shields.io/nuget/dt/DateTimePickerCustomNet6)
+![Nuget](https://img.shields.io/nuget/v/DateTimePickerCustom.WPF.LibraryClass)
+![Nuget](https://img.shields.io/nuget/dt/DateTimePickerCustom.WPF.LibraryClass)
 
 # DateTimePickerCustom
 
